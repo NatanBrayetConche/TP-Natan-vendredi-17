@@ -1,0 +1,21 @@
+<body>
+    <header class="header header--atTop">
+        <button class="header__menuBtn menuBurger" :aria-expanded="menuIsOpen" aria-controls="mainNav"
+            @pointerdown="menuIsOpen = !menuIsOpen">
+            menu
+        </button>
+
+        <nav id="mainNav" class="header__menu menu" aria-label="Menu principal" x-show="menuIsOpen" x-transition>
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link" href="../Cats/chat1/index.html">chats-1</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="../Cats/chat2/index.html">chats-2</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
